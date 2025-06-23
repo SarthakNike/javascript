@@ -15,6 +15,7 @@
     <br>
     <br>
     <input type="button" value="login" onclick="login()">
+    <input type="button" value="reset" onclick="reset()">
     <script>
         function login() {
             var Username = document.getElementById('Username').value;
@@ -26,6 +27,11 @@
             else {
                 alert('Invalid Username or Password');
             }
+        }
+        function reset() {
+             var Username = document.getElementById('Username').value=null;
+            var password = document.getElementById('password').value=null;
+            
         }
     </script>
 </body>
