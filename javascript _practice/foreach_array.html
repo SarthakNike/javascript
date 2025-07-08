@@ -6,6 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>Loop through Students</h3>
+    <button onclick="displayStudents()">Show Student Details</button>
+    <pre id="output"></pre>
+    <script>
+        const students = [
+            { id: 1, name: "Alice", age: 20, grade: "A" },
+            { id: 2, name: "Bob", age: 22, grade: "B" },
+            { id: 3, name: "Charlie", age: 21, grade: "A" },
+            { id: 4, name: "David", age: 23, grade: "C" },
+        ];
+
+        function displayStudents() {
+            let output = "Student Details:\n";
+            students.foreach(student => {
+                output += ` ID: ${student.id}, Name: ${student.name}, Age: ${student.age}, Grade: ${student.grade}\n`;
+            });
+            document.getElementById("output").textContent = output;
+        }
+    </script>
 </body>
 </html>
