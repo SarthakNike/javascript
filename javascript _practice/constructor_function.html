@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function person(name, age, city) {
+            this.name = name;
+            this.age = age;
+            this.city = city;
+            this.introduce = function() {
+                console.log(`Hi, I'm ${this.name} from ${this.city}.`);
+            };
+        }
+        let person1 = new person("Alice",25,"New York");
+        let person2 = new person("Bob",28,"Los Angeles");
+
+        console.log(person1.name);
+        console.log(person2.city);
+
+        person1.introduce();
+    </script>
+</body>
+</html>
