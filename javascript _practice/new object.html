@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+
+        // Another way to create an object is by using the built in Object constructor.
+        let car = new Object();
+        car.brand = "Toyota";
+        car.model = "Camry";
+        car.year = 2022;
+        car.start = function() {
+            console.log("The car is starting... ");
+        };
+        console.log(car.brand);
+        console.log(car.start());
+    </script>
 </body>
 </html>
