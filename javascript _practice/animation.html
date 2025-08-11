@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+        /* Background Color Animation */
+        p.bg-animation {
+            width: 100px;
+            height: 100px;
+            background: #FF0000;
+            animation: bgMove 5s infinite;
+        }
+        @keyframes bgMove {
+            from { background-color: #FF0000; }
+            to { background-color: #0000FF; }
+        }
+
+        /* Position Animation */
+        p.move-animation {
+            width: 100px;
+            height: 100px;
+            background: #FF0000;
+            position: relative;
+            animation: move 5s infinite;
+        }
+        @keyframes move {
+            from { left: 0px; }
+            to { left: 200px; }
+        }
+
+        /* Border Image */
+        p.border-image {
+            border: 10px solid transparent;
+            padding: 10px;
+            border-image: url('1520539437A4-Border-Png.png') 30 round;
+        }
+
+        /* Box Shadow */
+        p.box-shadow {
+            border: 1px double #99FF00;
+            padding: 10px;
+            box-shadow: 5px 10px 10px red;
+        }
+
+        /* Multiple Box Shadows */
+        p.multiple-shadows {
+            height: 200px;
+            width: 200px;
+            border: 1px double #99FF00;
+            padding: 10px;
+            box-shadow: 5px 10px 10px green, 10px 15px 15px red, 15px 20px 20px yellow;
+        }
+
+        /* Clip Path & Caret Color */
+        img.circle {
+            clip-path: circle(50%);
+        }
+        p.caret-color {
+            caret-color: green;
+        }
+
+        /* Grayscale Filter */
+        img.grayscale {
+            filter: grayscale(100%);
+        }
+
+        /* Brightness Filter */
+        img.bright {
+            filter: brightness(150%);
+        }
+
+        /* Drop Shadow */
+        img.shadow {
+            filter: drop-shadow(10px 10px 12px red);
+        }
+    </style>
+</head>
+<body>
+    <p class="bg-animation">Hello Aptech</p>
+    <p class="move-animation">Hello Aptech</p>
+    <p class="border-image">Hello Aptech</p>
+    <p class="box-shadow">Hello Aptech</p>
+    <p class="multiple-shadows">Hello Aptech</p>
+    <p class="caret-color">Hello Aptech</p>
+    <img class="circle" src="istockphoto-1069317442-612x612.jpg" height="300px" width="400px">
+    <img class="grayscale" src="istockphoto-1069317442-612x612.jpg" height="300px" width="400px">
+    <img class="bright" src="istockphoto-1069317442-612x612.jpg" height="300px" width="400px">
+    <img class="shadow" src="istockphoto-1069317442-612x612.jpg" height="300px" width="400px">
+</body>
+</html>
+[22/03, 9:45 am] RV: <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Background Color Animation */
+        p.bg-animation {
+            width: 100px;
+            height: 100px;
+            background: #FF0000;
+            animation: bgMove 5s infinite alternate;
+        }
+        @keyframes bgMove {
+            0% { background-color: #FF0000; }
+            50% { background-color: #00FF00; }
+            100% { background-color: #0000FF; }
+        }
+
+        /* Position and Rotation Animation */
+        p.move-rotate-animation {
+            width: 100px;
+            height: 100px;
+            background: #FF0000;
+            position: relative;
+            animation: moveRotate 5s infinite alternate ease-in-out;
+        }
+        @keyframes moveRotate {
+            0% { left: 0px; transform: rotate(0deg); }
+            50% { left: 100px; transform: rotate(180deg); }
+            100% { left: 200px; transform: rotate(360deg); }
+        }
+
+        /* Border Animation */
+        p.border-animation {
+            border: 5px solid transparent;
+            padding: 10px;
+            animation: borderPulse 3s infinite alternate;
+        }
+        @keyframes borderPulse {
+            0% { border-color: red; }
+            50% { border-color: green; }
+            100% { border-color: blue; }
+        }
+
+        /* Glowing Box Shadow */
+        p.glowing-shadow {
+            border: 2px solid #99FF00;
+            padding: 10px;
+            box-shadow: 0 0 10px red;
+            animation: glowEffect 2s infinite alternate;
+        }
+        @keyframes glowEffect {
+            0% { box-shadow: 0 0 10px red; }
+            50% { box-shadow: 0 0 20px yellow; }
+            100% { box-shadow: 0 0 30px blue; }
+        }
+
+        /* Bouncing Animation */
+        p.bounce {
+            width: 100px;
+            height: 100px;
+            background: purple;
+            position: relative;
+            animation: bounce 2s infinite alternate ease-in-out;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50px); }
+        }
+
+        /* Spinning Image */
+        img.spin {
+            width: 200px;
+            height: 200px;
+            animation: spin 4s infinite linear;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <p class="bg-animation">Hello Aptech</p>
+    <p class="move-rotate-animation">Hello Aptech</p>
+    <p class="border-animation">Hello Aptech</p>
+    <p class="glowing-shadow">Hello Aptech</p>
+    <p class="bounce">Hello Aptech</p>
+    <img class="spin" src="download.jpeg" height="300px" width="400px">
+    
+</body>
+</html>
